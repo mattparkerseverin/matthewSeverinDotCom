@@ -161,15 +161,6 @@ textarea {
     border: none;
 }
 
-
-.row-content button {
-    margin-bottom:5px;
-    margin-left:5px;
-    vertical-align: top;
-    font-size: 12px;
-    // width:200px; ------------------
-}
-
 #navbar {
     float: right;
 }
@@ -266,8 +257,28 @@ li a:hover {
     position:absolute;
     width:40px;
     height:70px;
-    display:inline;
-    // float: right;
+}
+
+.btn-wrapper button {
+    margin-bottom:5px;
+    margin-left:5px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.row-buttons {
+    display: none;
+    padding-top:15px;
+}
+
+.row-buttons button {
+    width:100px;
+    // opacity: .5;
+}
+
+.btn-gutter {
+    padding:2px;
+    // opacity: .5;
 }
 
 .btn-info {
@@ -310,6 +321,10 @@ li a:hover {
     // letter-spacing: 1.25px;
 }
 
+// .row-buttons {
+//     display:none;
+// }
+
 .row-about p {
     margin-bottom: 20px;
 }
@@ -336,10 +351,7 @@ li a:hover {
 .wrap-content {
     display: inline-block;
     overflow:hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-
-// iframe {background-color: red}
 
 // /* Large desktop */
 @media (min-width: 1250px) {
@@ -383,12 +395,6 @@ li a:hover {
         padding-top:50px;
     }
 
-    .wrap-content {
-        // background-color: red;
-            // overflow: hidden;
-
-    }
-
     .banner-lg {
         -ms-zoom: 0.666;
         -moz-transform: scale(0.666);
@@ -409,7 +415,6 @@ li a:hover {
     .container-content {
         padding-top:65px;
         height:auto;
-        // background-color: red
     }
 
     .thumb {
@@ -419,7 +424,7 @@ li a:hover {
     .row-title, .row-details {
         padding-left:15%;
         padding-right:15%;
-        margin-top:50px;
+        // margin-top:50px;
     }
 
     .row-details {
@@ -429,12 +434,6 @@ li a:hover {
     .video-width {
         width:90%;
         height:auto !important;
-    }
-
-    .wrap-content {
-        // background-color: red;
-            // overflow: hidden;
-
     }
 
     .banner-lg {
@@ -461,28 +460,6 @@ li a:hover {
 
     .container-about{
         padding-top:50px;
-    }
-
-    .btn-wrapper {
-        width:100%;
-        height:35px;
-        display:block;
-        padding:0% 20% 0% 20%;
-        // background-color:red;
-
-    }
-
-    .row-content iframe {
-        text-align: center;
-        // width:200px; ------------------
-    }
-
-    .row-content button {
-        margin:20px 0px 20px 0px;
-        width:40%;
-        font-size: 12px;
-        text-align: center;
-        // width:200px; ------------------
     }
 }
 

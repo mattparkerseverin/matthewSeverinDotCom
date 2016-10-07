@@ -148,13 +148,6 @@ textarea {
   border: none;
 }
 
-.row-content button {
-  margin-bottom: 5px;
-  margin-left: 5px;
-  vertical-align: top;
-  font-size: 12px;
-}
-
 #navbar {
   float: right;
 }
@@ -225,7 +218,6 @@ li a:hover {
 .container-content, .container-about {
   padding-top: 100px;
   height: 100%;
-  overflow-y: scroll;
   letter-spacing: 1px;
 }
 
@@ -245,7 +237,26 @@ li a:hover {
   position: absolute;
   width: 40px;
   height: 70px;
-  display: inline;
+}
+
+.btn-wrapper button {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  vertical-align: top;
+  font-size: 12px;
+}
+
+.row-buttons {
+  display: none;
+  padding-top: 15px;
+}
+
+.row-buttons button {
+  width: 100px;
+}
+
+.btn-gutter {
+  padding: 2px;
 }
 
 .btn-info {
@@ -311,7 +322,6 @@ li a:hover {
 .wrap-content {
   display: inline-block;
   overflow: hidden;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 @media (min-width: 1250px) {
@@ -372,7 +382,6 @@ li a:hover {
   .row-title, .row-details {
     padding-left: 15%;
     padding-right: 15%;
-    margin-top: 50px;
   }
   .row-details {
     margin-top: 0px;
@@ -401,21 +410,6 @@ li a:hover {
   }
   .container-about {
     padding-top: 50px;
-  }
-  .btn-wrapper {
-    width: 100%;
-    height: 35px;
-    display: block;
-    padding: 0% 20% 0% 20%;
-  }
-  .row-content iframe {
-    text-align: center;
-  }
-  .row-content button {
-    margin: 20px 0px 20px 0px;
-    width: 40%;
-    font-size: 12px;
-    text-align: center;
   }
 }
 
