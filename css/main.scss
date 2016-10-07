@@ -351,7 +351,7 @@ li a:hover {
 .wrap-content {
     display: inline-block;
     overflow:hidden;
-    background-color: blue;
+    // background-color: blue;
 }
 
 .banner-lg {
@@ -364,9 +364,9 @@ li a:hover {
     -webkit-transform-origin: 0 0;
 }
 
-iframe {
-    opacity:.25;
-}
+// iframe {
+//     opacity:.25;
+// }
 
 // /* Large desktop */
 @media (min-width: 1250px) {

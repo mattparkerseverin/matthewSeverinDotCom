@@ -322,7 +322,6 @@ li a:hover {
 .wrap-content {
   display: inline-block;
   overflow: hidden;
-  background-color: blue;
 }
 
 .banner-lg {
@@ -333,10 +332,6 @@ li a:hover {
   -o-transform-origin: 0 0;
   -webkit-transform: scale(1);
   -webkit-transform-origin: 0 0;
-}
-
-iframe {
-  opacity: .25;
 }
 
 @media (min-width: 1250px) {
