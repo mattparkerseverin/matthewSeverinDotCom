@@ -61,12 +61,14 @@ $(document).ready(function(){
 	function writeContent(myContent, myContent2, myContent3){
 		var prefix = myContent.contentPath.slice(0,24);
 		buttonsShowHide();
+		$(window).off("resize");
 
 		if(prefix == "https://player.vimeo.com"){
-			$('.wrap-content').prepend('<iframe class="video-width" src='+myContent.contentPath+' width='+myContent.contentWidth+' height='+myContent.contentHeight+' scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+			$('.col-content').prepend('<div class="wrap-content"><iframe class="video-width" src='+myContent.contentPath+' width='+myContent.contentWidth+' height='+myContent.contentHeight+' scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>');
 		}
+
 		else {
-			$('.wrap-content').prepend('<iframe src='+myContent.contentPath+' width='+myContent.contentWidth+' height='+myContent.contentHeight+' scrolling="no" frameBorder="0"></iframe>');
+			$('.col-content').prepend('<div class="wrap-content"><iframe src='+myContent.contentPath+' width='+myContent.contentWidth+' height='+myContent.contentHeight+' scrolling="no" frameBorder="0"></iframe></div>');
 
 			if($('.wrap-content > iframe').width() > 300) {
 				$('.wrap-content > iframe').addClass('banner-lg');
@@ -116,7 +118,7 @@ $(document).ready(function(){
 	$('.close-btn').click(
 	    function() {
 	        $('.content-overlay').hide();
-	        $('.wrap-content > iframe').remove();
+	        $('.wrap-content').remove();
 	        $('.row-details > p').remove();
 	        $('.row-title > p').remove();
 
