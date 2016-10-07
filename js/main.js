@@ -126,8 +126,7 @@ $(document).ready(function(){
 
 	$('.replay-btn').click(
 	    function() {
-	    	console.log('replay');
-	        $('.col-content > iframe').attr( 'src', function ( i, val ) { return val; });
+	        $('.wrap-content > iframe').attr( 'src', function ( i, val ) { return val; });
 	    }
 	);
 
