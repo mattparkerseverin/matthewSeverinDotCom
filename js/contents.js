@@ -8,9 +8,11 @@ var bannerHeight = '250';
 var videoWidth = '720';
 var videoHeight = '405';
 
+var videoEmbedSettings = '?title=0&byline=0&portrait=0';
+
 var contentArray = [];
 
-for(var i=0; i<32; i++){
+for(var i=0; i<38; i++){
 	contentArray.push('thumb'+i+'');
 }
 
@@ -22,6 +24,7 @@ var descriptionArray = [
 	{description: 'Sherwin-Williams: Cube ', icon: h5 },
 	{description: 'Hawaiian Tropic: Weightless ', icon: h5 },
 	{description: 'Rhinocort ', icon: h5 },
+	{description: 'Jagermeister: Process ', icon: h5 },
 	{description: 'Rhinocort: Quiz ', icon: h5 },
 	{description: 'Sherwin-Williams: Color Card ', icon: h5 },
 	{description: 'Samsung: Durability ', icon: h5 },
@@ -46,7 +49,12 @@ var descriptionArray = [
 	{description: 'PNC Bank: Achievment Sessions ', icon: ae },
 	{description: 'PNC Bank: Achievment Sessions ', icon: ae },
 	{description: 'PNC Bank: Achievment Sessions ', icon: ae },
-	{description: 'FEMA: Go Bag ', icon: ae }
+	{description: 'FEMA: Go Bag ', icon: ae },
+	{description: 'FEMA: Flood ', icon: fla },
+	{description: 'Krylon: 127 ', icon: ae },
+	{description: 'PNC: Brand ', icon: fla },
+	{description: 'Microsoft: Efficiencies ', icon: fla },
+	{description: 'Microsoft: Compete ', icon: fla }
 ];
 
 var iframeArray = [
@@ -57,31 +65,37 @@ var iframeArray = [
     { contentPath: 'media/iframe/sherwin/cube/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/hawaiian/weightless/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/rhinocort/banner/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
+    { contentPath: 'media/iframe/jager/process/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/rhinocort/quiz/index.html', contentWidth: 600, contentHeight: 250, contentWidthMin: 400, contentHeightMin: 166 },
     { contentPath: 'media/iframe/sherwin/colorcard/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/samsung/durability/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/samsung/encryption/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/samsung/ssd/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
-    { contentPath: 'https://player.vimeo.com/video/183869729?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/183869729'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
     { contentPath: 'media/iframe/pwc/eyf/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/pnc/nano/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/samsung/spen/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/purdy/lasts/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/duplicolor/banner/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: 'media/iframe/pwc/strategyand/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
-    { contentPath: 'https://player.vimeo.com/video/153823822?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
-    { contentPath: 'https://player.vimeo.com/video/184060633?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
-    { contentPath: 'https://player.vimeo.com/video/184061297?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/153823822'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/184060633'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/184061297'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
     { contentPath: 'media/iframe/jpmorgan/brand/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
-    { contentPath: 'https://player.vimeo.com/video/149073718?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/149073718'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
     { contentPath: 'media/iframe/pwc/chobani/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
     { contentPath: '', contentWidth: '', contentHeight: ''},
     { contentPath: 'media/iframe/symbicort/moa/index.html', contentWidth: 430, contentHeight: 383, contentWidthMin: 400, contentHeightMin: 356 },
     { contentPath: 'media/iframe/shutterstock/teams/index.html', contentWidth: bannerWidth, contentHeight: bannerHeight },
-    { contentPath: 'https://player.vimeo.com/video/112938633?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
-    { contentPath: 'https://player.vimeo.com/video/112936342?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
-    { contentPath: 'https://player.vimeo.com/video/112934488?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
-    { contentPath: 'https://player.vimeo.com/video/112321184?title=0&byline=0&portrait=0', contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/112938633'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/112936342'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/112934488'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/112321184'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/186000285'+videoEmbedSettings, contentWidth: bannerWidth, contentHeight: bannerHeight },
+    { contentPath: 'https://player.vimeo.com/video/186179405'+videoEmbedSettings, contentWidth: videoWidth, contentHeight: videoHeight },
+    { contentPath: 'https://player.vimeo.com/video/186366156'+videoEmbedSettings, contentWidth: bannerWidth, contentHeight: bannerHeight },
+    { contentPath: 'https://player.vimeo.com/video/186366722'+videoEmbedSettings, contentWidth: bannerWidth, contentHeight: bannerHeight },
+    { contentPath: 'https://player.vimeo.com/video/186423841'+videoEmbedSettings, contentWidth: 640, contentHeight: 480, contentWidthMin: 400, contentHeightMin: 224  }
 ];
 
 
@@ -108,6 +122,9 @@ var iframeDetailsArray = [
 
 	//Zyrtec
 	'A very straight forward banner. I began using a new workflow where all the images are placed on a single spritesheet, so less assets have to be loaded per impression.',
+
+	//Jager
+	'Jagermeister: Process',
 
 	//Rhinocort Quiz
 	'boop',
@@ -137,22 +154,26 @@ var iframeDetailsArray = [
 	'I used After Effects to model the "drawing on" effect of the text on the phone. I rendered those out to still images sequences which I then recombined into a 2x resolution spritesheet.',
 
 	//Purdy Lasts
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
 
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.',
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin, ex vitae porttitor euismod, mauris ligula molestie nulla, eget vestibulum turpis massa in nibh. Ut hendrerit sagittis quam vitae commodo. Integer interdum commodo lacus, vitae gravida purus ullamcorper sit amet. Cras est arcu, viverra quis metus consequat, vulputate eleifend dolor.'
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus suscipit finibus. Maecenas ligula risus, mollis sit amet molestie quis, viverra eget mauris. Ut sollicitudin.'
 ];
